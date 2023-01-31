@@ -1,0 +1,43 @@
+.footer{
+    padding: 2rem 0;
+    position: relative;
+   [class^="footer__column-"]{
+    margin-top: 4rem;
+   }
+    &__logo-box{
+        position:absolute ;
+        top:3rem;
+        left: 6.2rem;
+
+        @include respond(tab-port) {
+            
+            left: 44.5%;
+        //    transform: translate(-50%, -40%);
+         }
+      
+    }
+    &__logo{
+        height: 6rem;
+    }
+     &__list{
+        padding: 5rem 0;
+
+        
+     }
+    &__item{
+        list-style: none;
+        padding: .5rem 0;
+    &-name{
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: $Light_Grey;
+    }
+    }
+    &__copyright{
+        padding-top: 10rem;
+        list-style: none;
+        font-size: 2rem;
+        text-decoration: none;
+        color: $Light_Grey;
+    }
+}

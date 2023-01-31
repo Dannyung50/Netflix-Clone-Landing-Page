@@ -1,0 +1,164 @@
+.u-margin{
+  padding-left  : 6rem;
+  &:hover{
+    margin-left: 6rem;
+  }
+  }
+  .about{
+    padding-bottom: 8rem;;
+    
+  }
+  #about{
+
+    
+    padding: 5rem 0;
+    .about-contentBox-heading{ 
+    color: $White;
+    text-align: center;
+    margin: 10rem auto;
+    margin-left: 0;
+    margin-bottom: 0;
+
+        @include respond(phone){
+          padding: 4rem;
+        }
+     
+    .about-contentBox-heading--primary{
+        display: block;
+        text-align: left;
+        font-size: 5rem;
+        font-weight: 600;
+        line-height: 6rem;
+        margin-bottom: 2rem;
+
+        @include respond(tab-port) {
+          text-align: center;
+        }
+    }
+    
+    .about-contentBox-heading--secondary{
+        text-align: left;
+        white-space: nowrap;
+        display: block;
+        font-size: 2.3rem;
+        font-weight: 200;
+        line-height: 3rem;
+        margin-bottom: 1rem;
+
+        @include respond(tab-port) {
+          text-align: center;
+        }
+    
+}
+  
+
+}
+.media{
+    position: relative;
+  &__tv{
+    width: 100%
+  }
+  &__video{
+ width: 73.5%;
+ position: absolute;
+ top: 8.35rem;
+ left: 6.9rem;
+ z-index:-1 ;
+
+ @include respond(tab-port) {
+  top:7.5rem ;
+  left:6.5rem ;
+}
+  }
+}
+    .composition{
+       position: relative;
+       margin-top: 10rem;
+      
+       @include respond(tab-port) {
+        margin-top:0;
+        width: 150%;
+        padding: 10rem;
+        padding-bottom: 1rem;
+        top: 50%;
+        left: 50%;
+        transform: translate(-35%,0%);
+       
+        
+    }
+        &__photo{
+            width: 60%;
+            box-shadow: 0 1.5rem 4rem rgba(black,.4);
+            border-radius: 2px;
+            position: absolute;
+            z-index: 5;
+            transition: all .2s;
+            outline-offset: 2rem;
+           
+
+            @include respond(tab-port) {
+             float: left;
+             position: relative;
+             width: 40%;
+            
+
+          }
+
+         &--p1{
+           left:0;
+           top: -2rem;
+
+           @include respond(tab-port) {
+            position: absolute;
+            top: 0;
+            left: 40rem;
+            transform: scale(1.03);
+        }
+         }
+         &--p2{
+          
+           right: 0;
+           top: 2rem;
+
+           @include respond(tab-port) {
+            
+
+            
+        position: absolute;
+       
+        top: -.5rem;
+        right: 60rem;
+        height: 138%;
+            transform: scale(1.03);
+        }
+        }
+        &--p3{
+
+            left: 20%;
+            top: 10rem;
+
+            @include respond(tab-port) {
+              
+              position: absolute;
+              top: -3rem;
+              left: 13rem;
+              transform: scale(1.03);
+              z-index: 50;
+          }
+            
+
+        }
+        &:hover{
+            outline: 1rem solid $Button-red;
+            transform: scale(1.05) translateY(-.5rem);
+            box-shadow: 0 2.5rem 4rem rgba(black,.5);
+            z-index: 10;
+        }
+    }
+    &:hover .composition__photo:not(:hover){
+        transform: scale(.90);
+    }
+    
+ }
+
+  }
