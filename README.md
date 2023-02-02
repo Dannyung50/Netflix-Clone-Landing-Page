@@ -27,6 +27,7 @@ to show how to develop an animated webpage with HTML and CSS without javascript 
 <li>Wait for pull request to merge</li>
 <li>Celebrate your first step into the open source world and contribute more</li>
 </ul>
+
 ## Some animated sections
 
 #### Header Section
