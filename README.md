@@ -5,7 +5,7 @@
 
 <p>A fully animated and responsive Netflix clone landing page written in HTML and CSS only.
 This project  was built along with a udemy course,
-to show how to develop an animated webpage with HTML and CSS without javascript and how to use SASS(CSS Preprocessor) to structure webpages.
+to show how to develop an animated webpage with HTML and CSS without javascript.Using the CSS grid system  and SASS(CSS Compiler/Preprocessor) to structure long and complicated CSS file(s) to simplified SASS files.
 </p>
 
 ## Prerequisites
